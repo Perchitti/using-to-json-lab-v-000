@@ -1105,3 +1105,101 @@ Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.
 Processing by ProductsController#index as HTML
   [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
   Rendered products/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 327ms (Views: 317.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/store_admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/store_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/products/1/description" for 74.72.137.151 at 2018-07-18 20:21:28 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#description as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 37ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1/inventory" for 74.72.137.151 at 2018-07-18 20:21:28 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#inventory as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/show" for 74.72.137.151 at 2018-07-18 20:21:41 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=show):
+  app/controllers/products_controller.rb:26:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.2ms)
+
+
+Started GET "/products/new" for 74.72.137.151 at 2018-07-18 20:22:12 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (349.4ms)
+Completed 200 OK in 365ms (Views: 363.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 74.72.137.151 at 2018-07-18 20:22:19 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lXwvz7oRKXLVkbHu1jDwBOJFR7maRUYSqIGz/gaXqC//bF78JVOgPOAGJDDMPadCWpiTk4aUKE3Q8o+qGxitjA==", "product"=>{"name"=>"Test", "price"=>"3", "description"=>"dssdfsd", "inventory"=>"dfsd"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Test"], ["description", "dssdfsd"], ["inventory", 0], ["price", 3], ["created_at", "2018-07-18 20:22:19.446442"], ["updated_at", "2018-07-18 20:22:19.446442"]]
+  [1m[35m (24.2ms)[0m  commit transaction
+Redirected to http://165.227.90.214:41766/products
+Completed 302 Found in 30ms (ActiveRecord: 25.1ms)
+
+
+Started GET "/products" for 74.72.137.151 at 2018-07-18 20:22:19 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.3ms)
