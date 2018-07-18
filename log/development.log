@@ -1090,3 +1090,18 @@ ActionController::RoutingError (No route matches [GET] "/products/1/data"):
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "ordered_products" ("order_id", "product_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["order_id", 10], ["product_id", 4], ["created_at", "2018-07-18 20:20:23.384157"], ["updated_at", "2018-07-18 20:20:23.384157"]]
   [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 74.72.137.151 at 2018-07-18 20:21:17 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 29ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 74.72.137.151 at 2018-07-18 20:21:26 +0000
+Cannot render console from 74.72.137.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (10.6ms)
